@@ -9,6 +9,7 @@ mod cli;
 mod command;
 mod rpc;
 mod silly_rpc;
+mod get_blocktime;
 
 fn main() -> sc_cli::Result<()> {
 	command::run()

@@ -48,6 +48,9 @@ where
 		crate::silly_rpc::Silly {},
 	));
 
+	io.extend_with(crate::get_blocktime::Gettimetrait::to_delegate(
+		crate::get_blocktime::Blocktime {},
+	));
 	// Add a second RPC extension
 	// Because this one calls a Runtime API it needs a reference to the client.
 	io.extend_with(sum_storage_rpc::SumStorageApi::to_delegate(
